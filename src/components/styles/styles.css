@@ -1,0 +1,162 @@
+/* styles.css */
+
+/* Example class-based styles */
+.form-container {
+  background-color: #d3b9b9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+/* Example styles for specific elements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff;
+  /* Blue color */
+  color: #cf4444;
+  /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c6d5e6;
+  /* Darker blue on hover */
+}
+
+.success-message {
+  color: green;
+  /* Green color for success message */
+  margin-top: 10px;
+  text-align: center;
+  /* Center-align the message */
+  font-size: 18px;
+  /* Larger font size for the message */
+}
+
+/* AttendanceForm.css */
+.attendance-form-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  /* Set both divs to 50% width */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally */
+}
+
+.attendance-form-container input[type="text"],
+.attendance-form-container input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+   /* Add an underline with the primary color */
+  background-color: transparent; /* Transparent background */
+  color: #333; /* Text color */
+  transition: border-bottom 0.3s ease; /* Smooth transition for the underline */
+}
+
+/* Style the checkbox */
+.attendance-form-container .MuiCheckbox-root {
+  color: #03162a;
+  /* Blue color for the checkbox */
+}
+
+/* Style the checkbox label */
+.attendance-form-container .MuiFormLabel-root {
+  color: #333;
+  /* Dark gray color for the label */
+  font-weight: bold;
+}
+
+.attendance-form-container button[type="submit"] {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for the background color */
+}
+
+/* Style the submit button on hover */
+.attendance-form-container button[type="submit"]:hover {
+  background-color: #02458e; /* Darker blue background color on hover */
+}
+
+/* Style the date input */
+.attendance-form-container input[type="date"]::-webkit-calendar-picker-indicator {
+  /* background: transparent; */
+  cursor: pointer;
+  position: relative;
+  left: -25px;
+}
+
+/* AttendanceTable.css */
+.attendance-table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  /* Set both divs to 50% width */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally */
+}
+
+.attendance-view-container {
+  display: flex;
+  flex-direction: column; /* Make the divs appear vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh;
+}
+
+/* Add more styles as needed */
+/* Style the date input */
+/* Style the date input */
+.attendance-form-container input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font: optional;
+  margin: 8px 0;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  background-color: #fff;
+}
+/* Adjust the z-index to make the date picker visible */
+.attendance-form-container input[type="date"]::-webkit-calendar-picker-indicator {
+  z-index: 1; /* Increase the z-index value */
+}
+/* Style the input fields on focus */
+.attendance-form-container input[type="text"]:focus,
+.attendance-form-container input[type="date"]:focus {
+  border-bottom: 2px solid #0056b3; /* Change the underline color on focus */
+  outline: none; /* Remove the default focus outline */
+}
+/* Style the checkbox */
+.attendance-form-container .MuiCheckbox-root {
+  color: #007bff; /* Blue color for the checkbox */
+}
+.attendance-form-container .MuiFormLabel-root {
+  color: #333; /* Dark gray color for the label */
+  font-weight: bold;
+}
